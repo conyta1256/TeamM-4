@@ -11,7 +11,7 @@ L.Icon.Default.mergeOptions({
   shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
 });
 
-// 1. Delimitar las coordenadas del área (Ejemplo: Valdivia y sus alrededores)
+//Delimitación de Valdivia
 const boundsRegion = [
   [-39.95, -73.35], // Suroeste
   [-39.70, -73.10]  // Noreste

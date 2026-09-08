@@ -2,7 +2,6 @@
 
 import dynamic from "next/dynamic";
 
-// Cargar el mapa dinámicamente solo en el cliente
 const Map = dynamic(() => import("./componentes/Mapa"), {
   ssr: false,
 });
