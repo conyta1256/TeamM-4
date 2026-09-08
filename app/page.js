@@ -1,8 +1,17 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import dynamic from "next/dynamic";
+
+// Cargar el mapa dinámicamente solo en el cliente
+const Map = dynamic(() => import("./components/Map"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
-    <div>Turismo</div>
+    <main style={{ padding: "20px" }}>
+      <h1>Turismo</h1>
+      <div style={{ height: "400px", marginTop: "20px" }}>
+        <Map />
+      </div>
+    </main>
   );
 }
