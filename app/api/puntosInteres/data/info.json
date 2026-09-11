@@ -1,0 +1,16 @@
+[
+    {
+        "id" : "nombre",
+        "fecha" : "11092026", 
+        "t" :"lugar",
+        "info" : "detalles",
+        "pregunta" : "pregunta",
+        "respuesta1" : "aaaaa",
+        "repsuesta2" : "bbbbb",
+        "respuesta3" : "no sé",
+        "coodX" : "-23.742",
+        "coordY" : "-43.731",
+        "zoom" : "18",
+        "puntaje" : "20"
+    }
+]
