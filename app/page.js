@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 
+//Importe del componente Mapa de manera dinámica para evitar problemas de renderizado en el lado del servidor
 const Map = dynamic(() => import("./componentes/Mapa"), {
   ssr: false,
 });
