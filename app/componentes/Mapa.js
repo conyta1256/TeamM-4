@@ -17,16 +17,19 @@ export default function Mapa() {
 
   return (
     <MapContainer
+      //Dimensiones del mapa y zoom inicial
       center={center}
       zoom={13}
       style={{ height: "800px", width: "100%", borderRadius: "12px" }}
     >
       <TileLayer
+        //Muestra el mapa y la fuente de los datos (OpenStreetMap)
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
+
       <Marker position={center}>
-        <Popup>Punto 1</Popup>
+        <Popup>Punto 1</Popup>//Marcador de prueba en el centro del mapa
       </Marker>
     </MapContainer>
   );
