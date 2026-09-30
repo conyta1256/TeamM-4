@@ -29,7 +29,7 @@ export default function Mapa() {
       />
 
       <Marker position={center}>
-        <Popup>Punto 1</Popup>//Marcador de prueba en el centro del mapa
+        <Popup>Punto de prueba </Popup>//Marcador de prueba en el centro del mapa
       </Marker>
     </MapContainer>
   );
