@@ -26,22 +26,30 @@ export default function Home() {
     cargarPuntos();
   }, []);
 
-  // 2. Leer data con usarla pare crear puntos interactivos en el mapa.
+  // Preparar los datos para que el mapa pueda crear los marcadores.
   const crearMarcadores = () => {
-    return puntos.map((punto) => (
-      <Marker
-        key={punto.id}
-        position={{ lat: punto.coordX, lng: punto.coordY }}
-        title={punto.nombre}
-      />
-    ));
+    return puntos.flatMap((punto) => {
+      const lat = Number(punto.coordX ?? punto.coodX);
+      const lng = Number(punto.coordY);
+
+      if (!Number.isFinite(lat) || !Number.isFinite(lng)) {
+        return [];
+      }
+
+      return [{
+        ...punto,
+        id: punto.id,
+        nombre: punto.nombre ?? punto.t ?? "Punto de interés",
+        position: { lat, lng },
+      }];
+    });
   };
 
   return (
     <main style={{ padding: "20px" }}>
       <h1>Nombre del juego</h1>
       <div style={{ height: "400px", marginTop: "20px" }}>
-        <Map />
+        <Map marcadores={crearMarcadores()} />
       </div>
     </main>
     
