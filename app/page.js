@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <main style={{ padding: "20px" }}>
       <h1>Nombre del juego</h1>
-      <div style={{ height: "400px", marginTop: "20px" }}>
+      <div style={{ height: "800px", marginTop: "20px" }}>
         <Map marcadores={crearMarcadores()} />
       </div>
     </main>
