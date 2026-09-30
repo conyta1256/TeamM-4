@@ -9,12 +9,12 @@ const archivo = path.join(process.cwd(),
 //funcion get (sacar la info de la api)
 export async function GET(){
     try{
-        if (!fs.existSync(archivo)){
+        if (!fs.existsSync(archivo)){
             return NextResponse.json({error: "no esta agregado el archivo"},{status: 404});
         }
 
         // lee el archivo .json y retorna la info.
-        const lectura = fs.readFileSync(filePath,"utf8");
+        const lectura = fs.readFileSync(archivo,"utf8");
         const data = JSON.parse(lectura);
         return NextResponse.json (data, {status:200});
 
