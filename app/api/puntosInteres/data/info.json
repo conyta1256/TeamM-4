@@ -1,15 +1,43 @@
 [
     {
-        "id" : "nombre",
+        "id" : "nombre 1",
         "fecha" : "11092026", 
-        "t" :"lugar",
+        "t" :"edificio 10k",
         "info" : "detalles",
         "pregunta" : "pregunta",
         "respuesta1" : "aaaaa",
         "repsuesta2" : "bbbbb",
         "respuesta3" : "no sé",
-        "coodX" : -39.83304724898091,
-        "coordY" : -73.2512685601954,
+        "coodX" : -39.833485856872066,
+        "coordY" : -73.24527498002288,
+        "zoom" : 18,
+        "puntaje" : 20
+    },
+    {
+        "id" : "nombre 2",
+        "fecha" : "11092026", 
+        "t" :"Feria Fluvial ",
+        "info" : "detalles",
+        "pregunta" : "pregunta",
+        "respuesta1" : "aaaaa",
+        "repsuesta2" : "bbbbb",
+        "respuesta3" : "no sé",
+        "coodX" : -39.8126831884362,
+        "coordY" : -73.24830947199648,
+        "zoom" : 18,
+        "puntaje" : 20
+    },
+    {
+        "id" : "nombre 3",
+        "fecha" : "11092026", 
+        "t" :"Entrada Universidad gral. Lagos ",
+        "info" : "detalles",
+        "pregunta" : "pregunta",
+        "respuesta1" : "aaaaa",
+        "repsuesta2" : "bbbbb",
+        "respuesta3" : "no sé",
+        "coodX" : -39.83307264470817,
+        "coordY" : -73.25132747769138,
         "zoom" : 18,
         "puntaje" : 20
     }
