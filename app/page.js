@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import { useEffect, useState } from "react";  
 
 //Importe del componente Mapa de manera dinámica para evitar problemas de renderizado en el lado del servidor
 const Map = dynamic(() => import("./componentes/Mapa"), {
@@ -10,6 +11,7 @@ const Map = dynamic(() => import("./componentes/Mapa"), {
 export default function Home() {
 
   // 1. Cargar los datos guardados en la api al abrir la página
+  
   const cargarPuntos = async () => {
     try {
       const res = await fetch('/api/puntosInteres/data/info.json');
@@ -33,6 +35,7 @@ export default function Home() {
       />
     ));
   };
+
 
   // 3. cargar datos guardados en puntajes.json en la api (se usara como tablero de puntajes en el inicio de la app, se podra
   // ver los 5 mayores puntajes del usuario y al finalizar la partida se podra guardar si es mayor al puntaje guardado en la api)
