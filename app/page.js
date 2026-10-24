@@ -1,57 +1,116 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useEffect, useState } from "react";  
+import { useCallback, useEffect, useState } from "react";
+import styles from "./page.module.css";
 
-//Importe del componente Mapa de manera dinámica para evitar problemas de renderizado en el lado del servidor
 const Map = dynamic(() => import("./componentes/Mapa"), {
   ssr: false,
 });
 
 export default function Home() {
   const [puntos, setPuntos] = useState([]);
+  const [juegoIniciado, setJuegoIniciado] = useState(false);
 
-  // 1. Cargar los datos guardados en la api al abrir la página
-  
-  const cargarPuntos = async () => {
+  const registrarEvento = useCallback((action, details = {}) => {
+    let sessionId;
+
     try {
-      const res = await fetch('/api/puntosInteres');
-      const data = await res.json();
-      setPuntos(data); // Guardamos la lista en el estado
-    } catch (err) {
-      console.error('Error cargando los puntos:', err);
+      sessionId = window.sessionStorage.getItem("tour-valdivia-session");
+      if (!sessionId) {
+        sessionId = window.crypto.randomUUID();
+        window.sessionStorage.setItem("tour-valdivia-session", sessionId);
+      }
+    } catch (error) {
+      console.error("No se pudo preparar el evento del log:", error);
+      return;
     }
-  };
-  useEffect(() => {
-    cargarPuntos();
+
+    fetch("/api/log", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        sessionId,
+        action,
+        details,
+        occurredAt: new Date().toISOString(),
+      }),
+    }).then((res) => {
+      if (!res.ok) {
+        throw new Error(`La API de log respondió con estado ${res.status}.`);
+      }
+    }).catch((error) => {
+      console.error("No se pudo registrar la acción del usuario:", error);
+    });
   }, []);
 
-  // Preparar los datos para que el mapa pueda crear los marcadores.
-  const crearMarcadores = () => {
-    return puntos.flatMap((punto) => {
-      const lat = Number(punto.coordX ?? punto.coodX);
-      const lng = Number(punto.coordY);
+  useEffect(() => {
+    let cancelado = false;
 
-      if (!Number.isFinite(lat) || !Number.isFinite(lng)) {
-        return [];
-      }
+    fetch("/api/puntosInteres")
+      .then((res) => res.json())
+      .then((data) => {
+        if (!cancelado) {
+          setPuntos(data);
+        }
+      })
+      .catch((err) => {
+        console.error("Error cargando los puntos:", err);
+      });
 
-      return [{
-        ...punto,
-        id: punto.id,
-        nombre: punto.nombre ?? punto.t ?? "Punto de interés",
-        position: { lat, lng },
-      }];
-    });
-  };
+    return () => {
+      cancelado = true;
+    };
+  }, []);
+
+  const marcadores = puntos.flatMap((punto) => {
+    const lat = Number(punto.coordX ?? punto.coodX);
+    const lng = Number(punto.coordY);
+
+    if (!Number.isFinite(lat) || !Number.isFinite(lng)) {
+      return [];
+    }
+
+    return [{
+      ...punto,
+      id: punto.id,
+      nombre: punto.nombre ?? punto.t ?? "Punto de interés",
+      position: { lat, lng },
+    }];
+  });
 
   return (
-    <main style={{ padding: "20px" }}>
-      <h1>Nombre del juego</h1>
-      <div style={{ height: "800px", marginTop: "20px" }}>
-        <Map marcadores={crearMarcadores()} />
+    <main className={styles.page}>
+      <div className={styles.mapBackground} aria-hidden={!juegoIniciado}>
+        <Map
+          marcadores={juegoIniciado ? marcadores : []}
+          zoomHabilitado={juegoIniciado}
+          onEvento={registrarEvento}
+        />
       </div>
+
+      {!juegoIniciado && (
+        <section className={styles.welcome} aria-labelledby="welcome-title">
+          <div className={styles.welcomeCard}>
+            <p className={styles.eyebrow}>Una aventura por descubrir</p>
+            <h1 id="welcome-title">Tour por Valdivia</h1>
+            <p className={styles.description}>
+              Recorre la ciudad, explora sus lugares de interés y descubre las
+              historias que hacen de Valdivia un lugar único.
+            </p>
+            <button
+              className={styles.startButton}
+              onClick={() => {
+                registrarEvento("juego_iniciado");
+                setJuegoIniciado(true);
+              }}
+            >
+              Iniciar juego
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </section>
+      )}
     </main>
-    
   );
 }
