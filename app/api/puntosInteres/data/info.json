@@ -2,14 +2,14 @@
     {
         "id" : "nombre 1",
         "fecha" : "11092026", 
-        "t" :"edificio 10k",
+        "t" :"Torreón Los Canelos",
         "info" : "detalles",
         "pregunta" : "pregunta",
         "respuesta1" : "aaaaa",
         "repsuesta2" : "bbbbb",
         "respuesta3" : "no sé",
-        "coodX" : -39.833485856872066,
-        "coordY" : -73.24527498002288,
+        "coodX" : -39.81786882905,
+        "coordY" : -73.24878919905,
         "zoom" : 18,
         "puntaje" : 20
     },
@@ -30,14 +30,14 @@
     {
         "id" : "nombre 3",
         "fecha" : "11092026", 
-        "t" :"Entrada Universidad gral. Lagos ",
+        "t" :"Castillo de Niebla",
         "info" : "detalles",
         "pregunta" : "pregunta",
         "respuesta1" : "aaaaa",
         "repsuesta2" : "bbbbb",
         "respuesta3" : "no sé",
-        "coodX" : -39.83307264470817,
-        "coordY" : -73.25132747769138,
+        "coodX" : -39.86996034630842, 
+        "coordY" :-73.40206850267803,
         "zoom" : 18,
         "puntaje" : 20
     }
