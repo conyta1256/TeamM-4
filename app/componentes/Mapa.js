@@ -12,6 +12,21 @@ L.Icon.Default.mergeOptions({
   shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
 });
 
+const ICONO_PREGUNTA = L.divIcon({
+  className: "question-marker",
+  html: "?",
+  iconSize: [36, 44],
+  iconAnchor: [18, 44],
+  popupAnchor: [0, -40],
+});
+const ICONO_RESUELTO = L.divIcon({
+  className: "question-marker",
+  html: "X",
+  iconSize: [36, 44],
+  iconAnchor: [18, 44],
+  popupAnchor: [0, -40],
+});
+
 const VALDIVIA_CENTER = [-39.8142, -73.2459];
 const VALDIVIA_BOUNDS = [
   [-39.95, -73.45],
@@ -112,6 +127,7 @@ export default function Mapa({
           <Marker
             key={punto.id}
             position={punto.position}
+            icon={ICONO_PREGUNTA}
             title={punto.nombre}
             eventHandlers={{
               click: () => onEvento("marcador_seleccionado", {

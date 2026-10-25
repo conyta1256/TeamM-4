@@ -13,3 +13,41 @@ body {
 body {
   font-family: var(--font-geist-sans), sans-serif;
 }
+
+.question-marker {
+  position: relative;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 34px;
+  text-align: center;
+  text-shadow: 0 1px 2px rgb(0 0 0 / 35%);
+}
+
+.question-marker::before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background: #a77126;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 35%);
+  content: "";
+}
+
+.question-marker::after {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 12px;
+  width: 12px;
+  height: 12px;
+  background: #a77126;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  content: "";
+}
