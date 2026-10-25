@@ -51,3 +51,17 @@ body {
   clip-path: polygon(0 0, 100% 0, 50% 100%);
   content: "";
 }
+.question-marker.correcto::before,
+.question-marker.correcto::after {
+  background: #4fcc4f;
+}
+.question-marker.incorrecto::before,
+.question-marker.incorrecto::after {
+  background: #cc3b3b;
+}
+
+.leaflet-popup-content {
+  max-height: 280px !important;
+  overflow-y: auto !important;
+  padding-right: 8px !important;
+}
