@@ -8,12 +8,16 @@ const Map = dynamic(() => import("./componentes/Mapa"), {
   ssr: false,
 });
 
+const CLAVE_PROGRESO = "tour-valdivia-progreso";
+
 export default function Home() {
   const [puntos, setPuntos] = useState([]);
   const [juegoIniciado, setJuegoIniciado] = useState(false);
   const [puntosDisponibles, setPuntosDisponibles] = useState([]);
   const [puntosDesbloqueados, setPuntosDesbloqueados] = useState([]);
   const [puntuacionTotal, setPuntuacionTotal] = useState(0);
+  const [preguntasRespondidas, setPreguntasRespondidas] = useState([]);
+  const [progresoCargado, setProgresoCargado] = useState(false);
 
   const registrarEvento = useCallback((action, details = {}) => {
     let sessionId;
@@ -39,6 +43,58 @@ export default function Home() {
       }),
     }).catch((error) => console.error("Error en log:", error));
   }, []);
+
+  useEffect(() => {
+    let cancelado = false;
+
+    Promise.resolve()
+      .then(() => {
+        const progresoGuardado = window.localStorage.getItem(CLAVE_PROGRESO);
+        return progresoGuardado ? JSON.parse(progresoGuardado) : null;
+      })
+      .then((progreso) => {
+        if (cancelado || !progreso) return;
+
+        const idsValidos = Array.isArray(progreso.preguntasRespondidas)
+          && progreso.preguntasRespondidas.every(
+            (id) => typeof id === "string" || (typeof id === "number" && Number.isFinite(id)),
+          );
+        const puntajeValido = Number.isFinite(progreso.puntuacionTotal)
+          && progreso.puntuacionTotal >= 0;
+
+        if (!idsValidos || !puntajeValido) {
+          throw new Error("El progreso guardado tiene un formato inválido.");
+        }
+
+        setPreguntasRespondidas(
+          [...new Set(progreso.preguntasRespondidas.map(String).filter(Boolean))],
+        );
+        setPuntuacionTotal(progreso.puntuacionTotal);
+      })
+      .catch((error) => {
+        console.error("No se pudo recuperar el progreso guardado:", error);
+      })
+      .finally(() => {
+        if (!cancelado) setProgresoCargado(true);
+      });
+
+    return () => {
+      cancelado = true;
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!progresoCargado) return;
+
+    try {
+      window.localStorage.setItem(
+        CLAVE_PROGRESO,
+        JSON.stringify({ preguntasRespondidas, puntuacionTotal }),
+      );
+    } catch (error) {
+      console.error("No se pudo guardar el progreso de la partida:", error);
+    }
+  }, [preguntasRespondidas, progresoCargado, puntuacionTotal]);
 
   useEffect(() => {
     let cancelado = false;
@@ -76,25 +132,41 @@ export default function Home() {
 
   // Al iniciar el juego, seleccionamos el primer punto al azar
   const handleIniciarJuego = () => {
-    if (puntos.length === 0) return;
+    if (puntos.length === 0 || !progresoCargado) return;
 
-    const indiceAleatorio = Math.floor(Math.random() * puntos.length);
-    const primerPunto = puntos[indiceAleatorio];
-    const restantes = puntos.filter((p) => p.id !== primerPunto.id);
+    const idsRespondidas = new Set(preguntasRespondidas);
+    const respondidos = puntos
+      .filter((punto) => idsRespondidas.has(String(punto.id)))
+      .map((punto) => ({ ...punto, respondido: true }));
+    const disponibles = puntos.filter((punto) => !idsRespondidas.has(String(punto.id)));
+    const desbloqueados = [...respondidos];
 
-    setPuntosDesbloqueados([primerPunto]); // Primer punto visible en el mapa
-    setPuntosDisponibles(restantes);       // Restantes ocultos para desbloquear
+    if (disponibles.length > 0) {
+      const indiceAleatorio = Math.floor(Math.random() * disponibles.length);
+      const primerPunto = disponibles[indiceAleatorio];
+      desbloqueados.push(primerPunto);
+      disponibles.splice(indiceAleatorio, 1);
+    }
+
+    setPuntosDesbloqueados(desbloqueados);
+    setPuntosDisponibles(disponibles);
     setJuegoIniciado(true);
 
-    registrarEvento("juego_iniciado", { puntoId: primerPunto.id });
+    registrarEvento("juego_iniciado", {
+      puntoId: desbloqueados.find((punto) => !punto.respondido)?.id ?? null,
+      progresoRecuperado: preguntasRespondidas.length > 0,
+    });
   };
 
 // Función para manejar cuando se responde correctamente
   const desbloquearSiguientePunto = (puntoId, puntajeGanado = 10) => {
     // Forzamos a que sea un número para evitar concatenaciones de texto
     const puntosNum = Number(puntajeGanado) || 10;
-    
+
     setPuntuacionTotal((prev) => Number(prev) + puntosNum);
+    setPreguntasRespondidas((prev) => (
+      prev.includes(String(puntoId)) ? prev : [...prev, String(puntoId)]
+    ));
     registrarEvento("respuesta_correcta", { puntoId, puntosGanados: puntosNum });
 
     // Marcamos el punto actual como respondido
@@ -156,9 +228,9 @@ export default function Home() {
             <button
               className={styles.startButton}
               onClick={handleIniciarJuego}
-              disabled={puntos.length === 0}
+              disabled={puntos.length === 0 || !progresoCargado}
             >
-              Iniciar juego
+              {preguntasRespondidas.length > 0 ? "Continuar partida" : "Iniciar juego"}
               <span aria-hidden="true">→</span>
             </button>
           </div>
