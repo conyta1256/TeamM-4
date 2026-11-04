@@ -82,6 +82,24 @@
   background: #10563f;
 }
 
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.newGameButton {
+  border: 1px solid #176b52;
+  background: transparent;
+  color: #176b52;
+}
+
+.newGameButton:hover {
+  background: #e8f4ee;
+  color: #10563f;
+}
+
 .startButton:focus-visible {
   outline: 3px solid #a8ddc6;
   outline-offset: 4px;
