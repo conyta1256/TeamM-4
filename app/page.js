@@ -41,7 +41,13 @@ export default function Home() {
         details,
         occurredAt: new Date().toISOString(),
       }),
-    }).catch((error) => console.error("Error en log:", error));
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`El servidor rechazó el evento del log (${response.status}).`);
+        }
+      })
+      .catch((error) => console.error("Error en log:", error));
   }, []);
 
   useEffect(() => {
@@ -131,10 +137,11 @@ export default function Home() {
   }, []);
 
   // Al iniciar el juego, seleccionamos el primer punto al azar
-  const handleIniciarJuego = () => {
+  const handleIniciarJuego = (nuevaPartida = false) => {
     if (puntos.length === 0 || !progresoCargado) return;
 
-    const idsRespondidas = new Set(preguntasRespondidas);
+    const preguntasPrevias = nuevaPartida ? [] : preguntasRespondidas;
+    const idsRespondidas = new Set(preguntasPrevias);
     const respondidos = puntos
       .filter((punto) => idsRespondidas.has(String(punto.id)))
       .map((punto) => ({ ...punto, respondido: true }));
@@ -152,10 +159,25 @@ export default function Home() {
     setPuntosDisponibles(disponibles);
     setJuegoIniciado(true);
 
-    registrarEvento("juego_iniciado", {
+    registrarEvento(nuevaPartida ? "nueva_partida_iniciada" : "juego_iniciado", {
       puntoId: desbloqueados.find((punto) => !punto.respondido)?.id ?? null,
-      progresoRecuperado: preguntasRespondidas.length > 0,
+      progresoRecuperado: !nuevaPartida && preguntasPrevias.length > 0,
     });
+  };
+
+  const handleNuevaPartida = () => {
+    if (puntos.length === 0 || !progresoCargado) return;
+
+    try {
+      window.localStorage.removeItem(CLAVE_PROGRESO);
+    } catch (error) {
+      console.error("No se pudo borrar el progreso de la partida:", error);
+      return;
+    }
+
+    setPreguntasRespondidas([]);
+    setPuntuacionTotal(0);
+    handleIniciarJuego(true);
   };
 
 // Función para manejar cuando se responde correctamente
@@ -185,6 +207,8 @@ export default function Home() {
       alert("¡Felicidades! Has completado y desbloqueado todos los puntos del tour.");
     }
   };
+
+  const hayPartidaGuardada = preguntasRespondidas.length > 0 || puntuacionTotal > 0;
 
   return (
     <main className={styles.page}>
@@ -225,14 +249,26 @@ export default function Home() {
               Recorre la ciudad, explora sus lugares de interés y descubre las
               historias que hacen de Valdivia un lugar único.
             </p>
-            <button
-              className={styles.startButton}
-              onClick={handleIniciarJuego}
-              disabled={puntos.length === 0 || !progresoCargado}
-            >
-              {preguntasRespondidas.length > 0 ? "Continuar partida" : "Iniciar juego"}
-              <span aria-hidden="true">→</span>
-            </button>
+            <div className={styles.actions}>
+              <button
+                className={styles.startButton}
+                onClick={() => handleIniciarJuego()}
+                disabled={puntos.length === 0 || !progresoCargado}
+              >
+                {hayPartidaGuardada ? "Continuar partida" : "Iniciar juego"}
+                <span aria-hidden="true">→</span>
+              </button>
+              {hayPartidaGuardada && (
+                <button
+                  className={`${styles.startButton} ${styles.newGameButton}`}
+                  onClick={handleNuevaPartida}
+                  disabled={puntos.length === 0 || !progresoCargado}
+                >
+                  Nueva partida
+                  <span aria-hidden="true">↻</span>
+                </button>
+              )}
+            </div>
           </div>
         </section>
       )}
