@@ -7122,5 +7122,517 @@
     },
     "occurredAt": "2026-10-25T22:22:33.551Z",
     "recordedAt": "2026-10-25T22:22:33.580Z"
+  },
+  {
+    "id": "ad83a9ca-7d29-4e51-a956-7aa45386ad02",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "juego_iniciado",
+    "details": {
+      "puntoId": "TUR0004",
+      "progresoRecuperado": false
+    },
+    "occurredAt": "2026-11-04T14:29:47.476Z",
+    "recordedAt": "2026-11-04T14:29:47.739Z"
+  },
+  {
+    "id": "2d01abc5-7f26-4d20-a431-e78ddb69a39c",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.74791588743954,
+      "lng": -73.2726287841797
+    },
+    "occurredAt": "2026-11-04T14:29:50.898Z",
+    "recordedAt": "2026-11-04T14:29:50.940Z"
+  },
+  {
+    "id": "95ac5692-bfd5-4449-ae94-21c43782ee03",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.78670838452865,
+      "lng": -73.28516006469728
+    },
+    "occurredAt": "2026-11-04T14:29:52.528Z",
+    "recordedAt": "2026-11-04T14:29:52.592Z"
+  },
+  {
+    "id": "d5ffd81d-3201-4b19-a162-549b7f88ebed",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.85987953012438,
+      "lng": -73.28516006469728
+    },
+    "occurredAt": "2026-11-04T14:29:53.441Z",
+    "recordedAt": "2026-11-04T14:29:53.491Z"
+  },
+  {
+    "id": "5a5d5952-aac9-466f-af6c-460f48186c12",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.8604066068934,
+      "lng": -73.28516006469728
+    },
+    "occurredAt": "2026-11-04T14:29:54.588Z",
+    "recordedAt": "2026-11-04T14:29:54.647Z"
+  },
+  {
+    "id": "3587439c-97bf-439d-8427-d4bf851de213",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 12
+    },
+    "occurredAt": "2026-11-04T14:29:59.809Z",
+    "recordedAt": "2026-11-04T14:29:59.856Z"
+  },
+  {
+    "id": "9c6ec2c9-2671-4a1f-9415-439a7fc2b163",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR0004",
+      "nombre": "Corral",
+      "lat": -39.888209915589,
+      "lng": -73.431531643601
+    },
+    "occurredAt": "2026-11-04T14:30:17.449Z",
+    "recordedAt": "2026-11-04T14:30:17.493Z"
+  },
+  {
+    "id": "408e03fc-3054-49ed-a41d-e1d9fe0d7c0e",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "respuesta_correcta",
+    "details": {
+      "puntoId": "TUR0004",
+      "puntosGanados": 10
+    },
+    "occurredAt": "2026-11-04T14:30:43.188Z",
+    "recordedAt": "2026-11-04T14:30:43.263Z"
+  },
+  {
+    "id": "04584210-abeb-483f-88ef-bbc92d6a4235",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR012",
+      "nombre": "Parque Saval",
+      "lat": -39.805644150477,
+      "lng": -73.255329929667
+    },
+    "occurredAt": "2026-11-04T14:30:47.834Z",
+    "recordedAt": "2026-11-04T14:30:47.906Z"
+  },
+  {
+    "id": "882103a4-112c-4ce7-841f-4fb275b92add",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "respuesta_correcta",
+    "details": {
+      "puntoId": "TUR012",
+      "puntosGanados": 15
+    },
+    "occurredAt": "2026-11-04T14:31:06.858Z",
+    "recordedAt": "2026-11-04T14:31:06.931Z"
+  },
+  {
+    "id": "a5791088-3c9a-4dad-b05e-0d01f0734b58",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR014",
+      "nombre": "Museo de Las Telecomunicaciones",
+      "lat": -39.8162299140715,
+      "lng": -73.246800446857
+    },
+    "occurredAt": "2026-11-04T14:31:09.740Z",
+    "recordedAt": "2026-11-04T14:31:09.783Z"
+  },
+  {
+    "id": "11b00bf1-0b40-4f21-b0b4-23ce3f738615",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "respuesta_correcta",
+    "details": {
+      "puntoId": "TUR014",
+      "puntosGanados": 15
+    },
+    "occurredAt": "2026-11-04T14:31:24.399Z",
+    "recordedAt": "2026-11-04T14:31:24.448Z"
+  },
+  {
+    "id": "08fd3969-bb08-42bb-835a-7c815ccc9f1f",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 14
+    },
+    "occurredAt": "2026-11-04T14:31:25.663Z",
+    "recordedAt": "2026-11-04T14:31:25.710Z"
+  },
+  {
+    "id": "f266ab9b-ff22-45b5-9a4d-3135e7991483",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 16
+    },
+    "occurredAt": "2026-11-04T14:31:26.135Z",
+    "recordedAt": "2026-11-04T14:31:26.174Z"
+  },
+  {
+    "id": "953d9d0c-072f-4d5a-aa28-ca0f18c17815",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.812038702220136,
+      "lng": -73.24745893478395
+    },
+    "occurredAt": "2026-11-04T14:31:27.936Z",
+    "recordedAt": "2026-11-04T14:31:27.986Z"
+  },
+  {
+    "id": "496f9d43-90c4-4015-a9b2-26b16a77872d",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR0001",
+      "nombre": "Feria Fluvial",
+      "lat": -39.812624493794,
+      "lng": -73.2482236124765
+    },
+    "occurredAt": "2026-11-04T14:31:31.502Z",
+    "recordedAt": "2026-11-04T14:31:31.565Z"
+  },
+  {
+    "id": "705f6189-350f-4966-b866-15f5d94baba9",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "respuesta_correcta",
+    "details": {
+      "puntoId": "TUR0001",
+      "puntosGanados": 10
+    },
+    "occurredAt": "2026-11-04T14:31:44.960Z",
+    "recordedAt": "2026-11-04T14:31:45.028Z"
+  },
+  {
+    "id": "f8cb1ec7-6346-441a-a714-18d352e79c64",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 14
+    },
+    "occurredAt": "2026-11-04T14:31:47.385Z",
+    "recordedAt": "2026-11-04T14:31:47.437Z"
+  },
+  {
+    "id": "aaf651db-45d1-4de6-80cd-3a50dc7ea572",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 13
+    },
+    "occurredAt": "2026-11-04T14:31:48.721Z",
+    "recordedAt": "2026-11-04T14:31:48.773Z"
+  },
+  {
+    "id": "6cd7f0e4-a7e4-48ab-a932-bc4edd4e1049",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.81704101648181,
+      "lng": -73.22542190551759
+    },
+    "occurredAt": "2026-11-04T14:31:51.030Z",
+    "recordedAt": "2026-11-04T14:31:51.091Z"
+  },
+  {
+    "id": "c73340bb-cf0d-4201-a289-782eeb00b714",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.81638175371797,
+      "lng": -73.22679519653322
+    },
+    "occurredAt": "2026-11-04T14:31:55.129Z",
+    "recordedAt": "2026-11-04T14:31:55.176Z"
+  },
+  {
+    "id": "06e969bd-3117-47a8-8a5d-ce9285020c02",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "juego_iniciado",
+    "details": {
+      "puntoId": "TUR015",
+      "progresoRecuperado": true
+    },
+    "occurredAt": "2026-11-04T14:32:03.657Z",
+    "recordedAt": "2026-11-04T14:32:03.709Z"
+  },
+  {
+    "id": "17e22010-71cc-42d0-88a7-e5abc0b7d436",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 14
+    },
+    "occurredAt": "2026-11-04T14:32:04.252Z",
+    "recordedAt": "2026-11-04T14:32:04.298Z"
+  },
+  {
+    "id": "1deec7b0-9f57-4a25-a614-e3e7962cd80b",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 12
+    },
+    "occurredAt": "2026-11-04T14:32:14.105Z",
+    "recordedAt": "2026-11-04T14:32:14.208Z"
+  },
+  {
+    "id": "10450ce9-7ea6-4027-9bd2-5ce94aa8fe11",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 14
+    },
+    "occurredAt": "2026-11-04T14:32:15.948Z",
+    "recordedAt": "2026-11-04T14:32:16.043Z"
+  },
+  {
+    "id": "b9111102-fd1e-44ec-8fbb-2bb26e4434bd",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.820567964848124,
+      "lng": -73.2396697998047
+    },
+    "occurredAt": "2026-11-04T14:32:22.637Z",
+    "recordedAt": "2026-11-04T14:32:22.682Z"
+  },
+  {
+    "id": "0012f637-3b8b-4af1-9f92-d790d4ba89cb",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR015",
+      "nombre": "Museo de Arte Contemporáneo de Valdivia",
+      "lat": -39.8125744524438,
+      "lng": -73.250524918022
+    },
+    "occurredAt": "2026-11-04T14:32:23.662Z",
+    "recordedAt": "2026-11-04T14:32:23.708Z"
+  },
+  {
+    "id": "019adfc9-7bee-4e6e-a14e-8f18fc0df262",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "respuesta_correcta",
+    "details": {
+      "puntoId": "TUR015",
+      "puntosGanados": 10
+    },
+    "occurredAt": "2026-11-04T14:32:29.669Z",
+    "recordedAt": "2026-11-04T14:32:29.778Z"
+  },
+  {
+    "id": "8a9d14db-cac0-4623-a4d9-6a2c490dfeac",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR0002",
+      "nombre": "Torreón Los Canelos",
+      "lat": -39.8176734209599,
+      "lng": -73.2486417180223
+    },
+    "occurredAt": "2026-11-04T14:32:33.807Z",
+    "recordedAt": "2026-11-04T14:32:33.863Z"
+  },
+  {
+    "id": "b5c2ae58-07fc-41f8-ad53-294fc694bf80",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR0002",
+      "nombre": "Torreón Los Canelos",
+      "lat": -39.8176734209599,
+      "lng": -73.2486417180223
+    },
+    "occurredAt": "2026-11-04T14:32:34.024Z",
+    "recordedAt": "2026-11-04T14:32:34.074Z"
+  },
+  {
+    "id": "80467460-3fdf-40be-aad4-2b359c08c35a",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 15
+    },
+    "occurredAt": "2026-11-04T14:32:34.299Z",
+    "recordedAt": "2026-11-04T14:32:34.340Z"
+  },
+  {
+    "id": "2de9f754-5c91-4cb6-a8dc-e80957343195",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR0002",
+      "nombre": "Torreón Los Canelos",
+      "lat": -39.8176734209599,
+      "lng": -73.2486417180223
+    },
+    "occurredAt": "2026-11-04T14:32:34.483Z",
+    "recordedAt": "2026-11-04T14:32:34.526Z"
+  },
+  {
+    "id": "661d7966-68bf-4900-b3f8-b03c1216715c",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "respuesta_correcta",
+    "details": {
+      "puntoId": "TUR0002",
+      "puntosGanados": 5
+    },
+    "occurredAt": "2026-11-04T14:32:38.905Z",
+    "recordedAt": "2026-11-04T14:32:38.944Z"
+  },
+  {
+    "id": "4114557e-4e83-419b-88ed-810924708bc5",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 17
+    },
+    "occurredAt": "2026-11-04T14:32:39.595Z",
+    "recordedAt": "2026-11-04T14:32:39.659Z"
+  },
+  {
+    "id": "c27b4c52-18c6-4e35-bc85-882224c47195",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 16
+    },
+    "occurredAt": "2026-11-04T14:32:40.196Z",
+    "recordedAt": "2026-11-04T14:32:40.238Z"
+  },
+  {
+    "id": "016523ee-f8c0-4dce-8fa5-f4bcbd8a1ab8",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 15
+    },
+    "occurredAt": "2026-11-04T14:32:40.799Z",
+    "recordedAt": "2026-11-04T14:32:40.867Z"
+  },
+  {
+    "id": "959f5679-ae52-4551-bbc7-023fc9b8f415",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR006",
+      "nombre": "Museo Naval Submarino O'Brien",
+      "lat": -39.8155154213923,
+      "lng": -73.249062414325
+    },
+    "occurredAt": "2026-11-04T14:32:41.841Z",
+    "recordedAt": "2026-11-04T14:32:41.902Z"
+  },
+  {
+    "id": "947a91a4-4f0f-40a6-bd52-92ce0425094f",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR006",
+      "nombre": "Museo Naval Submarino O'Brien",
+      "lat": -39.8155154213923,
+      "lng": -73.249062414325
+    },
+    "occurredAt": "2026-11-04T14:32:45.129Z",
+    "recordedAt": "2026-11-04T14:32:45.179Z"
+  },
+  {
+    "id": "41bf0d69-76e1-4142-bc8b-f913cd7cb07e",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR006",
+      "nombre": "Museo Naval Submarino O'Brien",
+      "lat": -39.8155154213923,
+      "lng": -73.249062414325
+    },
+    "occurredAt": "2026-11-04T14:32:46.138Z",
+    "recordedAt": "2026-11-04T14:32:46.196Z"
+  },
+  {
+    "id": "f94a8adf-d284-43c4-8148-176e50759974",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "respuesta_correcta",
+    "details": {
+      "puntoId": "TUR006",
+      "puntosGanados": 15
+    },
+    "occurredAt": "2026-11-04T14:32:49.054Z",
+    "recordedAt": "2026-11-04T14:32:49.094Z"
+  },
+  {
+    "id": "ed8214e9-7e19-4a8e-9642-05b994cdc366",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 13
+    },
+    "occurredAt": "2026-11-04T14:32:49.112Z",
+    "recordedAt": "2026-11-04T14:32:49.191Z"
+  },
+  {
+    "id": "845cd09d-706a-4827-a1c8-842dc37807a7",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 12
+    },
+    "occurredAt": "2026-11-04T14:32:49.682Z",
+    "recordedAt": "2026-11-04T14:32:49.839Z"
+  },
+  {
+    "id": "5319e654-2fbb-46e2-ace8-cbeed1630b55",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 14
+    },
+    "occurredAt": "2026-11-04T14:33:09.502Z",
+    "recordedAt": "2026-11-04T14:33:09.543Z"
+  },
+  {
+    "id": "f6da4889-bfa6-4a56-97b0-28cf1a81748f",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 12
+    },
+    "occurredAt": "2026-11-04T14:33:16.883Z",
+    "recordedAt": "2026-11-04T14:33:16.943Z"
+  },
+  {
+    "id": "290eaa67-ffb2-43e1-b8ea-aaf93de8eac0",
+    "sessionId": "15be872e-27de-4f11-8420-40ade093edbb",
+    "action": "juego_iniciado",
+    "details": {
+      "puntoId": "TUR0003",
+      "progresoRecuperado": true
+    },
+    "occurredAt": "2026-11-04T14:33:24.227Z",
+    "recordedAt": "2026-11-04T14:33:24.275Z"
+  },
+  {
+    "id": "a2ccd504-7696-470e-99ec-1469c3bd1a51",
+    "sessionId": "736ce3bc-ebfd-432c-9f78-4c29cb00d782",
+    "action": "juego_iniciado",
+    "details": {
+      "puntoId": "TUR008",
+      "progresoRecuperado": true
+    },
+    "occurredAt": "2026-11-04T14:34:25.378Z",
+    "recordedAt": "2026-11-04T14:34:25.680Z"
   }
 ]
