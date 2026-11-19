@@ -7634,5 +7634,1683 @@
     },
     "occurredAt": "2026-11-04T14:34:25.378Z",
     "recordedAt": "2026-11-04T14:34:25.680Z"
+  },
+  {
+    "id": "049d88ce-1399-486f-ab72-5fa768709946",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "nueva_partida_iniciada",
+    "details": {
+      "puntoId": "TUR0002",
+      "progresoRecuperado": false
+    },
+    "occurredAt": "2026-11-04T14:44:19.940Z",
+    "recordedAt": "2026-11-04T14:44:20.268Z"
+  },
+  {
+    "id": "f61ae1f8-f999-4bd4-8fb8-598f09f1d5cb",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 14
+    },
+    "occurredAt": "2026-11-04T14:44:20.412Z",
+    "recordedAt": "2026-11-04T14:44:20.480Z"
+  },
+  {
+    "id": "4364fa03-ef0e-4d8a-8b36-9c934671038b",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR0002",
+      "nombre": "Torreón Los Canelos",
+      "lat": -39.8176734209599,
+      "lng": -73.2486417180223
+    },
+    "occurredAt": "2026-11-04T14:44:24.360Z",
+    "recordedAt": "2026-11-04T14:44:24.425Z"
+  },
+  {
+    "id": "01656b90-184c-4d68-9e0a-0b5339b1a0da",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "respuesta_correcta",
+    "details": {
+      "puntoId": "TUR0002",
+      "puntosGanados": 5
+    },
+    "occurredAt": "2026-11-04T14:44:28.852Z",
+    "recordedAt": "2026-11-04T14:44:28.932Z"
+  },
+  {
+    "id": "e5fb0bf3-e592-4992-b6e9-8a9bda4a4e81",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 12
+    },
+    "occurredAt": "2026-11-04T14:44:29.272Z",
+    "recordedAt": "2026-11-04T14:44:29.389Z"
+  },
+  {
+    "id": "481e330b-e513-4af3-a976-1c8cfeb5ab14",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR005",
+      "nombre": "Catillo de Niebla ",
+      "lat": -39.8699603463084,
+      "lng": -73.402068502678
+    },
+    "occurredAt": "2026-11-04T14:44:31.872Z",
+    "recordedAt": "2026-11-04T14:44:31.940Z"
+  },
+  {
+    "id": "b69b3bc1-3ee7-445e-958d-bfaabef413ca",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "respuesta_correcta",
+    "details": {
+      "puntoId": "TUR005",
+      "puntosGanados": 20
+    },
+    "occurredAt": "2026-11-04T14:44:36.447Z",
+    "recordedAt": "2026-11-04T14:44:36.496Z"
+  },
+  {
+    "id": "228a710d-69ff-4b0d-9016-d1cfb762903f",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.80471175625118,
+      "lng": -73.2122039794922
+    },
+    "occurredAt": "2026-11-04T14:44:36.951Z",
+    "recordedAt": "2026-11-04T14:44:37.009Z"
+  },
+  {
+    "id": "e4f1c877-9253-49d1-b4e4-cf6e4da880a7",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR012",
+      "nombre": "Parque Saval",
+      "lat": -39.805644150477,
+      "lng": -73.255329929667
+    },
+    "occurredAt": "2026-11-04T14:44:38.002Z",
+    "recordedAt": "2026-11-04T14:44:38.056Z"
+  },
+  {
+    "id": "928d404c-4b13-45ac-80e1-be61332d44ef",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "respuesta_correcta",
+    "details": {
+      "puntoId": "TUR012",
+      "puntosGanados": 15
+    },
+    "occurredAt": "2026-11-04T14:44:41.057Z",
+    "recordedAt": "2026-11-04T14:44:41.103Z"
+  },
+  {
+    "id": "58050d42-d44c-41c6-9801-00a440366c57",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "juego_iniciado",
+    "details": {
+      "puntoId": "TUR0003",
+      "progresoRecuperado": true
+    },
+    "occurredAt": "2026-11-04T14:44:43.839Z",
+    "recordedAt": "2026-11-04T14:44:43.905Z"
+  },
+  {
+    "id": "50454b95-f299-4de1-9af3-9d728113a03d",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "nueva_partida_iniciada",
+    "details": {
+      "puntoId": "TUR007",
+      "progresoRecuperado": false
+    },
+    "occurredAt": "2026-11-04T14:44:47.150Z",
+    "recordedAt": "2026-11-04T14:44:47.194Z"
+  },
+  {
+    "id": "dc48d445-d2a4-4cc1-9f12-0209c05d6c36",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "juego_iniciado",
+    "details": {
+      "puntoId": "TUR005",
+      "progresoRecuperado": false
+    },
+    "occurredAt": "2026-11-04T14:54:10.758Z",
+    "recordedAt": "2026-11-04T14:54:11.046Z"
+  },
+  {
+    "id": "7f027e2e-b52f-48ae-b398-529ac83a35a0",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.836025070257406,
+      "lng": -73.28516006469728
+    },
+    "occurredAt": "2026-11-04T14:54:14.793Z",
+    "recordedAt": "2026-11-04T14:54:14.844Z"
+  },
+  {
+    "id": "0dc6065f-a1b5-4b6e-bc22-392fe48669cf",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 15
+    },
+    "occurredAt": "2026-11-04T14:54:16.780Z",
+    "recordedAt": "2026-11-04T14:54:16.821Z"
+  },
+  {
+    "id": "ac164c8e-260d-4490-8ed2-8afbc0317c7c",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.86921807197245,
+      "lng": -73.40879917144777
+    },
+    "occurredAt": "2026-11-04T14:54:20.452Z",
+    "recordedAt": "2026-11-04T14:54:20.511Z"
+  },
+  {
+    "id": "39774d16-335c-4588-8ffb-7ef0ee432118",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR005",
+      "nombre": "Catillo de Niebla ",
+      "lat": -39.8699603463084,
+      "lng": -73.402068502678
+    },
+    "occurredAt": "2026-11-04T14:54:26.262Z",
+    "recordedAt": "2026-11-04T14:54:26.312Z"
+  },
+  {
+    "id": "0617ff15-8df9-4eaa-816b-7dca852b9de6",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "respuesta_correcta",
+    "details": {
+      "puntoId": "TUR005",
+      "puntosGanados": 20
+    },
+    "occurredAt": "2026-11-04T14:54:33.544Z",
+    "recordedAt": "2026-11-04T14:54:33.605Z"
+  },
+  {
+    "id": "ca493e45-b1ad-4d67-b4ab-98c44d27dd7c",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.86908632008132,
+      "lng": -73.40652465820314
+    },
+    "occurredAt": "2026-11-04T14:54:34.545Z",
+    "recordedAt": "2026-11-04T14:54:34.598Z"
+  },
+  {
+    "id": "c46d6ce7-aacc-42c8-90bc-3fd6bb13ed81",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 13
+    },
+    "occurredAt": "2026-11-04T14:54:36.573Z",
+    "recordedAt": "2026-11-04T14:54:36.651Z"
+  },
+  {
+    "id": "1eb7f5f8-936c-4c3a-a5a9-a25cf9b545fd",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 12
+    },
+    "occurredAt": "2026-11-04T14:54:37.543Z",
+    "recordedAt": "2026-11-04T14:54:37.624Z"
+  },
+  {
+    "id": "4f0023c4-4d44-475a-9baa-ff75d1caa6c4",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR007",
+      "nombre": "Puente Cau-Cau",
+      "lat": -39.800928700843,
+      "lng": -73.252219218023
+    },
+    "occurredAt": "2026-11-04T14:54:44.172Z",
+    "recordedAt": "2026-11-04T14:54:44.219Z"
+  },
+  {
+    "id": "de3725fe-4914-485f-8ce8-43554f57a643",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "respuesta_correcta",
+    "details": {
+      "puntoId": "TUR007",
+      "puntosGanados": 10
+    },
+    "occurredAt": "2026-11-04T14:55:07.704Z",
+    "recordedAt": "2026-11-04T14:55:07.783Z"
+  },
+  {
+    "id": "27f089c8-ffa9-4b28-82ad-53dbdf6f749b",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR0003",
+      "nombre": "Jardín Botánico UACH",
+      "lat": -39.805613208335,
+      "lng": -73.251899318022
+    },
+    "occurredAt": "2026-11-04T14:55:09.137Z",
+    "recordedAt": "2026-11-04T14:55:09.192Z"
+  },
+  {
+    "id": "bb2c9ace-914e-478f-b72c-3c2b4d61131e",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "respuesta_correcta",
+    "details": {
+      "puntoId": "TUR0003",
+      "puntosGanados": 10
+    },
+    "occurredAt": "2026-11-04T14:55:24.740Z",
+    "recordedAt": "2026-11-04T14:55:24.814Z"
+  },
+  {
+    "id": "05a37913-db41-4e60-bf62-f236bfd4b2bc",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.80471175625118,
+      "lng": -73.2726287841797
+    },
+    "occurredAt": "2026-11-04T14:55:25.559Z",
+    "recordedAt": "2026-11-04T14:55:25.610Z"
+  },
+  {
+    "id": "55b6391a-8102-4e21-8a7b-acb0aed9fac4",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR0004",
+      "nombre": "Corral",
+      "lat": -39.888209915589,
+      "lng": -73.431531643601
+    },
+    "occurredAt": "2026-11-04T14:55:33.014Z",
+    "recordedAt": "2026-11-04T14:55:33.061Z"
+  },
+  {
+    "id": "106a1f1c-ecb6-4d54-a88e-467110a7b00b",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "respuesta_correcta",
+    "details": {
+      "puntoId": "TUR0004",
+      "puntosGanados": 10
+    },
+    "occurredAt": "2026-11-04T14:55:59.930Z",
+    "recordedAt": "2026-11-04T14:56:00.013Z"
+  },
+  {
+    "id": "6a183d2c-2e84-4641-9271-4b6ce9c29d65",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR014",
+      "nombre": "Museo de Las Telecomunicaciones",
+      "lat": -39.8162299140715,
+      "lng": -73.246800446857
+    },
+    "occurredAt": "2026-11-04T14:56:01.408Z",
+    "recordedAt": "2026-11-04T14:56:01.468Z"
+  },
+  {
+    "id": "1d1386ff-3c4b-4a30-a8fb-0f10c7ac4ca5",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 14
+    },
+    "occurredAt": "2026-11-04T14:56:05.338Z",
+    "recordedAt": "2026-11-04T14:56:05.395Z"
+  },
+  {
+    "id": "dc89acb3-ac88-4e71-a000-10daab66da8f",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 16
+    },
+    "occurredAt": "2026-11-04T14:56:06.630Z",
+    "recordedAt": "2026-11-04T14:56:06.676Z"
+  },
+  {
+    "id": "0f697e21-91a4-4c01-a3f3-42457a8db8ca",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.81484070233994,
+      "lng": -73.24587106704713
+    },
+    "occurredAt": "2026-11-04T14:56:08.744Z",
+    "recordedAt": "2026-11-04T14:56:08.794Z"
+  },
+  {
+    "id": "50375223-ba10-41ab-8b25-f3b712fe2524",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "respuesta_correcta",
+    "details": {
+      "puntoId": "TUR014",
+      "puntosGanados": 15
+    },
+    "occurredAt": "2026-11-04T14:56:29.260Z",
+    "recordedAt": "2026-11-04T14:56:29.314Z"
+  },
+  {
+    "id": "3d1f359d-c5fd-4795-b024-c3f8b3c5ac64",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 14
+    },
+    "occurredAt": "2026-11-04T14:56:29.499Z",
+    "recordedAt": "2026-11-04T14:56:29.576Z"
+  },
+  {
+    "id": "31e6c1f1-6f52-46ed-8a8d-b8211af50fe7",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR006",
+      "nombre": "Museo Naval Submarino O'Brien",
+      "lat": -39.8155154213923,
+      "lng": -73.249062414325
+    },
+    "occurredAt": "2026-11-04T14:56:31.729Z",
+    "recordedAt": "2026-11-04T14:56:31.769Z"
+  },
+  {
+    "id": "fc4d3e9b-0f98-449d-b058-02bd67451d13",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "respuesta_correcta",
+    "details": {
+      "puntoId": "TUR006",
+      "puntosGanados": 15
+    },
+    "occurredAt": "2026-11-04T14:56:36.233Z",
+    "recordedAt": "2026-11-04T14:56:36.281Z"
+  },
+  {
+    "id": "40bdd748-4a66-4e0b-8f73-56af7162b062",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 12
+    },
+    "occurredAt": "2026-11-04T14:56:36.810Z",
+    "recordedAt": "2026-11-04T14:56:36.878Z"
+  },
+  {
+    "id": "a57444f9-3dc4-4bf2-b64a-968c918d1d79",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 13
+    },
+    "occurredAt": "2026-11-04T14:56:38.975Z",
+    "recordedAt": "2026-11-04T14:56:39.013Z"
+  },
+  {
+    "id": "9afa760a-cd9a-4e28-8d94-9664a8d080bd",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 12
+    },
+    "occurredAt": "2026-11-04T14:56:39.337Z",
+    "recordedAt": "2026-11-04T14:56:39.401Z"
+  },
+  {
+    "id": "b708644f-c69c-4814-bdba-b26cb3a8aa9d",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.80471175625118,
+      "lng": -73.25546264648439
+    },
+    "occurredAt": "2026-11-04T14:56:41.740Z",
+    "recordedAt": "2026-11-04T14:56:41.793Z"
+  },
+  {
+    "id": "d3653bc3-d579-4e85-981c-60b6584561f5",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 14
+    },
+    "occurredAt": "2026-11-04T14:56:43.074Z",
+    "recordedAt": "2026-11-04T14:56:43.137Z"
+  },
+  {
+    "id": "faa04fa3-3a56-4f17-b9cb-40bbfdb947b2",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.711181429749054,
+      "lng": -73.3312511444092
+    },
+    "occurredAt": "2026-11-04T14:56:44.318Z",
+    "recordedAt": "2026-11-04T14:56:44.365Z"
+  },
+  {
+    "id": "86bc9b4e-5a84-4d45-8936-5ee740d8732a",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.711181429749054,
+      "lng": -73.331937789917
+    },
+    "occurredAt": "2026-11-04T14:56:45.705Z",
+    "recordedAt": "2026-11-04T14:56:45.756Z"
+  },
+  {
+    "id": "541bb8c1-11b2-44d3-b3be-7204b0ee97e8",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR009",
+      "nombre": "Parque Oncol",
+      "lat": -39.6998854024871,
+      "lng": -73.326176075698
+    },
+    "occurredAt": "2026-11-04T14:56:48.252Z",
+    "recordedAt": "2026-11-04T14:56:48.293Z"
+  },
+  {
+    "id": "684d0ef4-46be-4e29-b05d-602d280ee086",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 16
+    },
+    "occurredAt": "2026-11-04T14:56:50.195Z",
+    "recordedAt": "2026-11-04T14:56:50.269Z"
+  },
+  {
+    "id": "6c57f939-59d3-4843-97fa-029d5983f573",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.69839569121445,
+      "lng": -73.32685232162477
+    },
+    "occurredAt": "2026-11-04T14:56:52.156Z",
+    "recordedAt": "2026-11-04T14:56:52.204Z"
+  },
+  {
+    "id": "6ab02a3e-d4a7-42a1-82c2-240b819ebada",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "respuesta_correcta",
+    "details": {
+      "puntoId": "TUR009",
+      "puntosGanados": 25
+    },
+    "occurredAt": "2026-11-04T14:57:43.152Z",
+    "recordedAt": "2026-11-04T14:57:43.203Z"
+  },
+  {
+    "id": "ee39ad9a-8597-478d-ae8f-c93b4f713726",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 14
+    },
+    "occurredAt": "2026-11-04T14:57:43.482Z",
+    "recordedAt": "2026-11-04T14:57:43.551Z"
+  },
+  {
+    "id": "c3c14ce3-818d-41b5-a407-36d49c3ca0c7",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 12
+    },
+    "occurredAt": "2026-11-04T14:57:44.384Z",
+    "recordedAt": "2026-11-04T14:57:44.462Z"
+  },
+  {
+    "id": "5cc97a63-900b-400f-96ba-ebff18a1c371",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 14
+    },
+    "occurredAt": "2026-11-04T14:57:46.019Z",
+    "recordedAt": "2026-11-04T14:57:46.066Z"
+  },
+  {
+    "id": "cc0fb124-d4c2-4201-9c91-29d5d54551ed",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.80441503557646,
+      "lng": -73.24739456176759
+    },
+    "occurredAt": "2026-11-04T14:57:47.567Z",
+    "recordedAt": "2026-11-04T14:57:47.610Z"
+  },
+  {
+    "id": "1a1242aa-d75a-43f3-9c44-9d76a77a83e3",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 12
+    },
+    "occurredAt": "2026-11-04T14:57:48.037Z",
+    "recordedAt": "2026-11-04T14:57:48.081Z"
+  },
+  {
+    "id": "6f7e03b9-6712-4180-a3ee-1157c014fbb1",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "juego_iniciado",
+    "details": {
+      "puntoId": "TUR013",
+      "progresoRecuperado": true
+    },
+    "occurredAt": "2026-11-04T14:58:39.949Z",
+    "recordedAt": "2026-11-04T14:58:40.008Z"
+  },
+  {
+    "id": "264517fd-2799-420e-8ef9-0536eb6a50a3",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 15
+    },
+    "occurredAt": "2026-11-04T14:58:41.285Z",
+    "recordedAt": "2026-11-04T14:58:41.370Z"
+  },
+  {
+    "id": "05fb3600-f61d-45be-b1e6-9d7756a3d0af",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR013",
+      "nombre": "Museo de Exploración Rudolph Amandeus Philippi",
+      "lat": -39.813219383395,
+      "lng": -73.25174468708
+    },
+    "occurredAt": "2026-11-04T14:58:42.682Z",
+    "recordedAt": "2026-11-04T14:58:42.739Z"
+  },
+  {
+    "id": "0acb0439-d61c-4b45-838e-e1e5da8fd9b9",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "respuesta_correcta",
+    "details": {
+      "puntoId": "TUR013",
+      "puntosGanados": 30
+    },
+    "occurredAt": "2026-11-04T14:58:45.740Z",
+    "recordedAt": "2026-11-04T14:58:45.783Z"
+  },
+  {
+    "id": "b35205a5-3309-4f33-9e2d-e102a177c43d",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 17
+    },
+    "occurredAt": "2026-11-04T14:58:46.349Z",
+    "recordedAt": "2026-11-04T14:58:46.390Z"
+  },
+  {
+    "id": "b6d085ff-17b2-4030-94ec-f1192072471e",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 16
+    },
+    "occurredAt": "2026-11-04T14:58:47.144Z",
+    "recordedAt": "2026-11-04T14:58:47.359Z"
+  },
+  {
+    "id": "aadb5ce3-b266-4711-920e-4e5a8c353576",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 15
+    },
+    "occurredAt": "2026-11-04T14:58:47.481Z",
+    "recordedAt": "2026-11-04T14:58:47.533Z"
+  },
+  {
+    "id": "51a95c9a-2733-4101-8594-03456dca529b",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 13
+    },
+    "occurredAt": "2026-11-04T14:58:47.956Z",
+    "recordedAt": "2026-11-04T14:58:48.047Z"
+  },
+  {
+    "id": "18036a21-8957-45ce-b210-57a2a11330b6",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 12
+    },
+    "occurredAt": "2026-11-04T14:58:48.268Z",
+    "recordedAt": "2026-11-04T14:58:48.360Z"
+  },
+  {
+    "id": "a2f11afc-2a4d-4c76-b454-37e667c92862",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 14
+    },
+    "occurredAt": "2026-11-04T14:58:48.851Z",
+    "recordedAt": "2026-11-04T14:58:48.916Z"
+  },
+  {
+    "id": "5a123c0f-8603-4f6d-8258-71bd89f0cb2b",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 16
+    },
+    "occurredAt": "2026-11-04T14:58:49.216Z",
+    "recordedAt": "2026-11-04T14:58:49.275Z"
+  },
+  {
+    "id": "c426adb3-cd9d-4a94-87b6-2a07aa44713f",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 15
+    },
+    "occurredAt": "2026-11-04T14:58:50.293Z",
+    "recordedAt": "2026-11-04T14:58:50.363Z"
+  },
+  {
+    "id": "afd8327c-f669-4c04-a83a-c71e148b1756",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.790649085745684,
+      "lng": -73.27147006988527
+    },
+    "occurredAt": "2026-11-04T14:58:51.969Z",
+    "recordedAt": "2026-11-04T14:58:52.057Z"
+  },
+  {
+    "id": "c952aff6-864d-420d-9ae8-f004e8d2e808",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.80129939118289,
+      "lng": -73.25953960418703
+    },
+    "occurredAt": "2026-11-04T14:58:53.266Z",
+    "recordedAt": "2026-11-04T14:58:53.314Z"
+  },
+  {
+    "id": "c71ad3bf-9765-4e09-8e3e-ef614283a452",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.80726679796165,
+      "lng": -73.25949668884279
+    },
+    "occurredAt": "2026-11-04T14:58:54.407Z",
+    "recordedAt": "2026-11-04T14:58:54.454Z"
+  },
+  {
+    "id": "da36f4e9-d424-41d4-a461-d2880ad3db3a",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 17
+    },
+    "occurredAt": "2026-11-04T14:58:55.220Z",
+    "recordedAt": "2026-11-04T14:58:55.284Z"
+  },
+  {
+    "id": "8fd8b88c-52d1-4773-bfee-581f795ccb19",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.81050167423164,
+      "lng": -73.25279116630556
+    },
+    "occurredAt": "2026-11-04T14:58:56.416Z",
+    "recordedAt": "2026-11-04T14:58:56.465Z"
+  },
+  {
+    "id": "1a52e87a-2589-43e8-84b3-540266664e55",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR010",
+      "nombre": "Casa Prochelle",
+      "lat": -39.8113724276352,
+      "lng": -73.250555758779
+    },
+    "occurredAt": "2026-11-04T14:58:57.336Z",
+    "recordedAt": "2026-11-04T14:58:57.386Z"
+  },
+  {
+    "id": "0e4f7fa7-541e-4815-abea-57e6d592f14a",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 15
+    },
+    "occurredAt": "2026-11-04T14:59:01.650Z",
+    "recordedAt": "2026-11-04T14:59:01.736Z"
+  },
+  {
+    "id": "7680ad72-ad1c-4592-b816-4ab1814f8f24",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "respuesta_correcta",
+    "details": {
+      "puntoId": "TUR010",
+      "puntosGanados": 15
+    },
+    "occurredAt": "2026-11-04T14:59:01.689Z",
+    "recordedAt": "2026-11-04T14:59:01.807Z"
+  },
+  {
+    "id": "610e87b9-a820-4fad-9db8-ee2b1f418365",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR0001",
+      "nombre": "Feria Fluvial",
+      "lat": -39.812624493794,
+      "lng": -73.2482236124765
+    },
+    "occurredAt": "2026-11-04T14:59:02.979Z",
+    "recordedAt": "2026-11-04T14:59:03.033Z"
+  },
+  {
+    "id": "1a540048-906d-435b-a406-ed76ae8281b8",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "respuesta_correcta",
+    "details": {
+      "puntoId": "TUR0001",
+      "puntosGanados": 10
+    },
+    "occurredAt": "2026-11-04T14:59:07.331Z",
+    "recordedAt": "2026-11-04T14:59:07.389Z"
+  },
+  {
+    "id": "2d32a95c-f020-4be1-b043-5455481955e6",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 13
+    },
+    "occurredAt": "2026-11-04T14:59:07.751Z",
+    "recordedAt": "2026-11-04T14:59:07.832Z"
+  },
+  {
+    "id": "c56be92e-9250-4a36-9abb-456a8e8e3923",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 14
+    },
+    "occurredAt": "2026-11-04T14:59:08.676Z",
+    "recordedAt": "2026-11-04T14:59:08.716Z"
+  },
+  {
+    "id": "7de9cf19-dedf-4f51-afee-d030faad4aaf",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 15
+    },
+    "occurredAt": "2026-11-04T14:59:09.048Z",
+    "recordedAt": "2026-11-04T14:59:09.100Z"
+  },
+  {
+    "id": "e558f09d-abb3-44b4-9a59-cc5277915071",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR0002",
+      "nombre": "Torreón Los Canelos",
+      "lat": -39.8176734209599,
+      "lng": -73.2486417180223
+    },
+    "occurredAt": "2026-11-04T14:59:10.564Z",
+    "recordedAt": "2026-11-04T14:59:10.608Z"
+  },
+  {
+    "id": "bc39fe54-4ce9-45b8-9adc-008ad5508fd1",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "respuesta_correcta",
+    "details": {
+      "puntoId": "TUR0002",
+      "puntosGanados": 5
+    },
+    "occurredAt": "2026-11-04T14:59:15.953Z",
+    "recordedAt": "2026-11-04T14:59:16.012Z"
+  },
+  {
+    "id": "5aaadc7f-828a-4302-bcdb-fe1ee29cff7c",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR011",
+      "nombre": "Plaza de la República",
+      "lat": -39.8140283085285,
+      "lng": -73.245891645009
+    },
+    "occurredAt": "2026-11-04T14:59:17.759Z",
+    "recordedAt": "2026-11-04T14:59:17.827Z"
+  },
+  {
+    "id": "0a117c43-e174-4636-b98a-e91367af30b3",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "respuesta_correcta",
+    "details": {
+      "puntoId": "TUR011",
+      "puntosGanados": 30
+    },
+    "occurredAt": "2026-11-04T14:59:30.678Z",
+    "recordedAt": "2026-11-04T14:59:30.724Z"
+  },
+  {
+    "id": "5a48a32c-4fd7-4faa-9284-32bfaafdccee",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 13
+    },
+    "occurredAt": "2026-11-04T14:59:31.099Z",
+    "recordedAt": "2026-11-04T14:59:31.183Z"
+  },
+  {
+    "id": "a863d8ee-ba54-4830-b54c-263e0f1a5108",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR008",
+      "nombre": "Cerveceria Kunstmann",
+      "lat": -39.8366102679236,
+      "lng": -73.278585752955
+    },
+    "occurredAt": "2026-11-04T14:59:34.873Z",
+    "recordedAt": "2026-11-04T14:59:34.933Z"
+  },
+  {
+    "id": "d71c43a5-c50d-4233-ab1f-85e964433584",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 14
+    },
+    "occurredAt": "2026-11-04T14:59:44.808Z",
+    "recordedAt": "2026-11-04T14:59:44.852Z"
+  },
+  {
+    "id": "df48b73c-61b5-4ef1-a678-ddf0c3b7ddde",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 15
+    },
+    "occurredAt": "2026-11-04T14:59:45.627Z",
+    "recordedAt": "2026-11-04T14:59:45.671Z"
+  },
+  {
+    "id": "ab84716b-ebbc-48e2-8413-9b084bc9be79",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "respuesta_correcta",
+    "details": {
+      "puntoId": "TUR008",
+      "puntosGanados": 30
+    },
+    "occurredAt": "2026-11-04T14:59:56.120Z",
+    "recordedAt": "2026-11-04T14:59:56.167Z"
+  },
+  {
+    "id": "9eb7cc58-4d34-4ab4-aca8-01dad6d7ef25",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 13
+    },
+    "occurredAt": "2026-11-04T14:59:56.500Z",
+    "recordedAt": "2026-11-04T14:59:56.545Z"
+  },
+  {
+    "id": "e29056f3-cac7-42db-b8f4-e8f6def79389",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR012",
+      "nombre": "Parque Saval",
+      "lat": -39.805644150477,
+      "lng": -73.255329929667
+    },
+    "occurredAt": "2026-11-04T14:59:58.196Z",
+    "recordedAt": "2026-11-04T14:59:58.246Z"
+  },
+  {
+    "id": "b5f38a86-fb6c-4d4b-bbcb-60de238897fe",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "respuesta_correcta",
+    "details": {
+      "puntoId": "TUR012",
+      "puntosGanados": 15
+    },
+    "occurredAt": "2026-11-04T15:00:04.637Z",
+    "recordedAt": "2026-11-04T15:00:04.709Z"
+  },
+  {
+    "id": "651fb902-6f94-4d86-a7a3-5b3c8b4a0a36",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.817304719816654,
+      "lng": -73.27125549316408
+    },
+    "occurredAt": "2026-11-04T15:00:06.915Z",
+    "recordedAt": "2026-11-04T15:00:06.959Z"
+  },
+  {
+    "id": "02e21a73-cb3f-477d-bc5f-4511172fc267",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR008",
+      "nombre": "Cerveceria Kunstmann",
+      "lat": -39.8366102679236,
+      "lng": -73.278585752955
+    },
+    "occurredAt": "2026-11-04T15:00:08.614Z",
+    "recordedAt": "2026-11-04T15:00:08.663Z"
+  },
+  {
+    "id": "53792fd5-bfb2-4351-bdca-a01a50d658d2",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 14
+    },
+    "occurredAt": "2026-11-04T15:00:16.777Z",
+    "recordedAt": "2026-11-04T15:00:16.827Z"
+  },
+  {
+    "id": "d73915cb-57e7-4b71-91fe-dafc12c8cd4d",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 15
+    },
+    "occurredAt": "2026-11-04T15:00:17.164Z",
+    "recordedAt": "2026-11-04T15:00:17.234Z"
+  },
+  {
+    "id": "24d1dfc2-6ff5-4cd7-ad28-076dbe7fb763",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.79454010059679,
+      "lng": -73.33339691162111
+    },
+    "occurredAt": "2026-11-04T15:00:18.531Z",
+    "recordedAt": "2026-11-04T15:00:18.578Z"
+  },
+  {
+    "id": "b3f41064-a1c7-4e1c-bcb2-465774230541",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.81056348567189,
+      "lng": -73.31344127655031
+    },
+    "occurredAt": "2026-11-04T15:00:19.452Z",
+    "recordedAt": "2026-11-04T15:00:19.535Z"
+  },
+  {
+    "id": "55bf83ee-6968-4f77-a929-3005878c6683",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.831361938921134,
+      "lng": -73.29009532928468
+    },
+    "occurredAt": "2026-11-04T15:00:20.442Z",
+    "recordedAt": "2026-11-04T15:00:20.485Z"
+  },
+  {
+    "id": "4ec918fd-1a6e-485a-82b2-647f6dd08f9c",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.83347109760719,
+      "lng": -73.28254222869874
+    },
+    "occurredAt": "2026-11-04T15:00:22.137Z",
+    "recordedAt": "2026-11-04T15:00:22.186Z"
+  },
+  {
+    "id": "7b4be9a6-906f-4d44-a47f-8c605545a4be",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 16
+    },
+    "occurredAt": "2026-11-04T15:00:24.359Z",
+    "recordedAt": "2026-11-04T15:00:24.405Z"
+  },
+  {
+    "id": "ec8f96b7-8695-486c-8530-b5cb79f66d53",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 17
+    },
+    "occurredAt": "2026-11-04T15:00:24.827Z",
+    "recordedAt": "2026-11-04T15:00:24.877Z"
+  },
+  {
+    "id": "342df062-3e66-48ca-8865-bc21d24bb5b1",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.83503232765533,
+      "lng": -73.27701687812807
+    },
+    "occurredAt": "2026-11-04T15:00:27.000Z",
+    "recordedAt": "2026-11-04T15:00:27.042Z"
+  },
+  {
+    "id": "619e3bd7-5dc3-41af-a693-8889c07fe4d6",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.834871675013936,
+      "lng": -73.27901244163515
+    },
+    "occurredAt": "2026-11-04T15:00:45.427Z",
+    "recordedAt": "2026-11-04T15:00:45.472Z"
+  },
+  {
+    "id": "95e8b240-2ee0-470d-ac7a-98ef4a25f3ad",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 15
+    },
+    "occurredAt": "2026-11-04T15:03:25.228Z",
+    "recordedAt": "2026-11-04T15:03:25.316Z"
+  },
+  {
+    "id": "5b880a35-0d7b-40e9-9d73-4c0f8731d532",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.83571200774937,
+      "lng": -73.28893661499025
+    },
+    "occurredAt": "2026-11-04T15:03:26.916Z",
+    "recordedAt": "2026-11-04T15:03:26.960Z"
+  },
+  {
+    "id": "b2b0b2a8-1369-401a-88dc-84f7a8aebd5e",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 13
+    },
+    "occurredAt": "2026-11-04T15:03:27.348Z",
+    "recordedAt": "2026-11-04T15:03:27.400Z"
+  },
+  {
+    "id": "b655e40f-5013-404b-b1ab-ea4b311e752c",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 12
+    },
+    "occurredAt": "2026-11-04T15:03:28.363Z",
+    "recordedAt": "2026-11-04T15:03:28.437Z"
+  },
+  {
+    "id": "10c7877e-00b7-4dde-bfca-3ed2c105bb5e",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 14
+    },
+    "occurredAt": "2026-11-04T15:03:38.603Z",
+    "recordedAt": "2026-11-04T15:03:38.692Z"
+  },
+  {
+    "id": "a1dfc940-e174-4ab6-af38-b1fa673e1a21",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 15
+    },
+    "occurredAt": "2026-11-04T15:03:39.159Z",
+    "recordedAt": "2026-11-04T15:03:39.197Z"
+  },
+  {
+    "id": "22671a8e-27a7-4e09-bc13-9ae0e8e553a8",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 17
+    },
+    "occurredAt": "2026-11-04T15:03:40.184Z",
+    "recordedAt": "2026-11-04T15:03:40.255Z"
+  },
+  {
+    "id": "ae85e10d-4c71-4b98-90a2-998fca7880c4",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.80671046632089,
+      "lng": -73.25140714645387
+    },
+    "occurredAt": "2026-11-04T15:03:42.160Z",
+    "recordedAt": "2026-11-04T15:03:42.205Z"
+  },
+  {
+    "id": "396abb96-30b0-452f-ab23-682a72db49e9",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.80934785047829,
+      "lng": -73.25258731842042
+    },
+    "occurredAt": "2026-11-04T15:03:43.736Z",
+    "recordedAt": "2026-11-04T15:03:43.782Z"
+  },
+  {
+    "id": "8b0bc5d2-49db-4ac0-90b8-f65d560e0037",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.81068298763215,
+      "lng": -73.25213670730592
+    },
+    "occurredAt": "2026-11-04T15:03:44.576Z",
+    "recordedAt": "2026-11-04T15:03:44.634Z"
+  },
+  {
+    "id": "abf56d75-daae-4971-8a4f-94f70285e04a",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 16
+    },
+    "occurredAt": "2026-11-04T15:03:45.039Z",
+    "recordedAt": "2026-11-04T15:03:45.079Z"
+  },
+  {
+    "id": "9a87480e-6cff-4c78-a4e4-5493a4396046",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 15
+    },
+    "occurredAt": "2026-11-04T15:03:45.376Z",
+    "recordedAt": "2026-11-04T15:03:45.416Z"
+  },
+  {
+    "id": "eecd6f7a-69b6-4f90-aea4-39a56f70b8e9",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 13
+    },
+    "occurredAt": "2026-11-04T15:03:45.754Z",
+    "recordedAt": "2026-11-04T15:03:45.823Z"
+  },
+  {
+    "id": "b53a12de-0ef8-4d68-96b8-0ca493a0a063",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 12
+    },
+    "occurredAt": "2026-11-04T15:03:46.769Z",
+    "recordedAt": "2026-11-04T15:03:46.830Z"
+  },
+  {
+    "id": "5d0bf8f0-98f7-4195-a3b2-4f460f047de7",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.80471175625118,
+      "lng": -73.33339691162111
+    },
+    "occurredAt": "2026-11-04T15:03:50.532Z",
+    "recordedAt": "2026-11-04T15:03:50.586Z"
+  },
+  {
+    "id": "3b1a9766-9d02-47e1-9c4b-ee58884fd308",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 14
+    },
+    "occurredAt": "2026-11-04T15:04:12.290Z",
+    "recordedAt": "2026-11-04T15:04:12.345Z"
+  },
+  {
+    "id": "7de45453-ea3a-4ab5-ba4d-a4be41e0a48a",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 16
+    },
+    "occurredAt": "2026-11-04T15:04:13.018Z",
+    "recordedAt": "2026-11-04T15:04:13.102Z"
+  },
+  {
+    "id": "1a5da595-7114-40fc-8712-e3bddaaf6b08",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.80178570476429,
+      "lng": -73.25565576553346
+    },
+    "occurredAt": "2026-11-04T15:04:14.805Z",
+    "recordedAt": "2026-11-04T15:04:14.851Z"
+  },
+  {
+    "id": "16ae5a9c-46b7-4597-9afa-cf7c295627cc",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.806533263445544,
+      "lng": -73.25464725494386
+    },
+    "occurredAt": "2026-11-04T15:04:16.051Z",
+    "recordedAt": "2026-11-04T15:04:16.103Z"
+  },
+  {
+    "id": "91e09f44-822b-41fc-81bb-2ae9e55168c2",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.81052227805123,
+      "lng": -73.25353145599367
+    },
+    "occurredAt": "2026-11-04T15:04:17.337Z",
+    "recordedAt": "2026-11-04T15:04:17.388Z"
+  },
+  {
+    "id": "6d477137-130c-499f-94ee-d2da7fb42c86",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "marcador_seleccionado",
+    "details": {
+      "puntoId": "TUR015",
+      "nombre": "Museo de Arte Contemporáneo de Valdivia",
+      "lat": -39.8125744524438,
+      "lng": -73.250524918022
+    },
+    "occurredAt": "2026-11-04T15:04:18.426Z",
+    "recordedAt": "2026-11-04T15:04:18.483Z"
+  },
+  {
+    "id": "6cd12c09-0bf1-4628-b5dc-b5e45badb7f6",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "respuesta_correcta",
+    "details": {
+      "puntoId": "TUR015",
+      "puntosGanados": 10
+    },
+    "occurredAt": "2026-11-04T15:04:25.032Z",
+    "recordedAt": "2026-11-04T15:04:25.075Z"
+  },
+  {
+    "id": "a650a7de-89d8-425b-8567-f5ca2cc1db5d",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 14
+    },
+    "occurredAt": "2026-11-04T15:05:01.156Z",
+    "recordedAt": "2026-11-04T15:05:01.235Z"
+  },
+  {
+    "id": "2608acf7-e910-4ca9-ac2e-404e3b252414",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 12
+    },
+    "occurredAt": "2026-11-04T15:05:01.694Z",
+    "recordedAt": "2026-11-04T15:05:01.881Z"
+  },
+  {
+    "id": "1fa02f72-b715-46e0-ae7d-244d7bdd3628",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.80550300512357,
+      "lng": -73.35159301757814
+    },
+    "occurredAt": "2026-11-04T15:05:06.756Z",
+    "recordedAt": "2026-11-04T15:05:06.802Z"
+  },
+  {
+    "id": "8d0307d4-0797-48b6-836e-b2e84b6dfe6b",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.8255449391555,
+      "lng": -73.26370239257814
+    },
+    "occurredAt": "2026-11-04T15:05:09.877Z",
+    "recordedAt": "2026-11-04T15:05:09.929Z"
+  },
+  {
+    "id": "8f2792e8-edb5-462f-8a3e-9719e41e48e5",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.80471175625118,
+      "lng": -73.22250366210939
+    },
+    "occurredAt": "2026-11-04T15:05:11.937Z",
+    "recordedAt": "2026-11-04T15:05:11.995Z"
+  },
+  {
+    "id": "2c13d7dc-86a7-498d-97a3-80c91dea6771",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 14
+    },
+    "occurredAt": "2026-11-04T15:05:15.010Z",
+    "recordedAt": "2026-11-04T15:05:15.059Z"
+  },
+  {
+    "id": "2f65dd30-3091-4cc1-a097-4fe2dbfb9937",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.80790966447318,
+      "lng": -73.24790954589845
+    },
+    "occurredAt": "2026-11-04T15:05:17.083Z",
+    "recordedAt": "2026-11-04T15:05:17.128Z"
+  },
+  {
+    "id": "ea4ae727-63e6-4b5f-93e3-560e12f66b2d",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 16
+    },
+    "occurredAt": "2026-11-04T15:05:18.272Z",
+    "recordedAt": "2026-11-04T15:05:18.323Z"
+  },
+  {
+    "id": "f783dcce-afed-4894-b8b9-d87f133fb375",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 15
+    },
+    "occurredAt": "2026-11-04T15:05:19.116Z",
+    "recordedAt": "2026-11-04T15:05:19.162Z"
+  },
+  {
+    "id": "75dadbba-1ba8-477e-ae81-02c47d74625c",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.808651426055256,
+      "lng": -73.24645042419435
+    },
+    "occurredAt": "2026-11-04T15:05:22.213Z",
+    "recordedAt": "2026-11-04T15:05:22.258Z"
+  },
+  {
+    "id": "a7e628ea-0cfb-40ac-b6d7-7890f889c25f",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.809904160777045,
+      "lng": -73.24675083160402
+    },
+    "occurredAt": "2026-11-04T15:05:25.098Z",
+    "recordedAt": "2026-11-04T15:05:25.142Z"
+  },
+  {
+    "id": "657d1ee3-cf7f-4788-8a49-7cbd74abf046",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 17
+    },
+    "occurredAt": "2026-11-04T15:05:28.080Z",
+    "recordedAt": "2026-11-04T15:05:28.131Z"
+  },
+  {
+    "id": "a2d77be7-08bf-45c7-bd0c-0dccc3388b11",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.81233126933783,
+      "lng": -73.2490360736847
+    },
+    "occurredAt": "2026-11-04T15:05:30.238Z",
+    "recordedAt": "2026-11-04T15:05:30.286Z"
+  },
+  {
+    "id": "e899132a-432a-4dee-be8d-e57b1949ed0d",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.81431739628601,
+      "lng": -73.24932575225831
+    },
+    "occurredAt": "2026-11-04T15:05:32.130Z",
+    "recordedAt": "2026-11-04T15:05:32.173Z"
+  },
+  {
+    "id": "3308a585-6ff8-4fcf-ab94-a869b1f540a8",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 15
+    },
+    "occurredAt": "2026-11-04T15:05:33.002Z",
+    "recordedAt": "2026-11-04T15:05:33.083Z"
+  },
+  {
+    "id": "e89a4333-25fb-481f-afd5-7ef30c1bb23a",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.81293700293337,
+      "lng": -73.25258731842042
+    },
+    "occurredAt": "2026-11-04T15:05:34.755Z",
+    "recordedAt": "2026-11-04T15:05:34.799Z"
+  },
+  {
+    "id": "8faa1275-167c-411c-a02f-1c6d27eef7d9",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 17
+    },
+    "occurredAt": "2026-11-04T15:06:15.079Z",
+    "recordedAt": "2026-11-04T15:06:15.190Z"
+  },
+  {
+    "id": "13924775-ed15-4190-8c1b-0c9d14c7a346",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.81272685106615,
+      "lng": -73.24958324432374
+    },
+    "occurredAt": "2026-11-04T15:06:16.793Z",
+    "recordedAt": "2026-11-04T15:06:16.842Z"
+  },
+  {
+    "id": "f6938760-8242-44eb-a96d-ba3d6ddef4ab",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.81418553901407,
+      "lng": -73.24905753135683
+    },
+    "occurredAt": "2026-11-04T15:06:20.166Z",
+    "recordedAt": "2026-11-04T15:06:20.212Z"
+  },
+  {
+    "id": "9da1b75d-2bb7-4375-87fe-186d0a21ff64",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.8132378074292,
+      "lng": -73.24872493743898
+    },
+    "occurredAt": "2026-11-04T15:06:44.031Z",
+    "recordedAt": "2026-11-04T15:06:44.080Z"
+  },
+  {
+    "id": "e63eed6a-7176-4c36-aa4d-aed61b1cb4d4",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.812562025622675,
+      "lng": -73.2486927509308
+    },
+    "occurredAt": "2026-11-04T15:06:45.812Z",
+    "recordedAt": "2026-11-04T15:06:45.858Z"
+  },
+  {
+    "id": "8db69bbe-aa72-4782-b7f9-3e2c896544f1",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 16
+    },
+    "occurredAt": "2026-11-04T15:06:46.868Z",
+    "recordedAt": "2026-11-04T15:06:46.951Z"
+  },
+  {
+    "id": "337af7ed-7286-45e8-91b9-3efd1fd50895",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 15
+    },
+    "occurredAt": "2026-11-04T15:06:47.256Z",
+    "recordedAt": "2026-11-04T15:06:47.331Z"
+  },
+  {
+    "id": "9713ea80-092c-40c5-a3f8-31e1f9955696",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.81346444008395,
+      "lng": -73.25022697448732
+    },
+    "occurredAt": "2026-11-04T15:06:49.612Z",
+    "recordedAt": "2026-11-04T15:06:49.665Z"
+  },
+  {
+    "id": "f1b3e0a4-6c19-4199-895b-6d278e4793f7",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 14
+    },
+    "occurredAt": "2026-11-04T15:06:50.385Z",
+    "recordedAt": "2026-11-04T15:06:50.470Z"
+  },
+  {
+    "id": "ae510b76-b980-4006-a904-b3fe56e3754d",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 13
+    },
+    "occurredAt": "2026-11-04T15:06:52.570Z",
+    "recordedAt": "2026-11-04T15:06:52.621Z"
+  },
+  {
+    "id": "b0fc4f05-665a-42fd-9c00-a6d3436915c2",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 12
+    },
+    "occurredAt": "2026-11-04T15:06:53.604Z",
+    "recordedAt": "2026-11-04T15:06:53.696Z"
+  },
+  {
+    "id": "4eab0393-7317-43e6-9279-34fc4277da2c",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.80471175625118,
+      "lng": -73.27194213867189
+    },
+    "occurredAt": "2026-11-04T15:06:55.902Z",
+    "recordedAt": "2026-11-04T15:06:55.946Z"
+  },
+  {
+    "id": "46217740-a90c-4b68-ae5e-54d3b0da2dea",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_zoom_cambiado",
+    "details": {
+      "zoom": 13
+    },
+    "occurredAt": "2026-11-04T15:07:08.726Z",
+    "recordedAt": "2026-11-04T15:07:08.774Z"
+  },
+  {
+    "id": "33461722-fa26-4d53-9e7a-19ae7a7525ab",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.816645459582375,
+      "lng": -73.28464508056642
+    },
+    "occurredAt": "2026-11-04T15:07:12.993Z",
+    "recordedAt": "2026-11-04T15:07:13.042Z"
+  },
+  {
+    "id": "ff67467d-5d32-4f22-99c2-44f0c42f8c7a",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "nueva_partida_iniciada",
+    "details": {
+      "puntoId": "TUR005",
+      "progresoRecuperado": false
+    },
+    "occurredAt": "2026-11-04T15:07:17.085Z",
+    "recordedAt": "2026-11-04T15:07:17.137Z"
+  },
+  {
+    "id": "72da6d46-d566-4ff3-a9c6-476ef68c89aa",
+    "sessionId": "4694560a-fa07-4ff9-aab8-46c8852365c6",
+    "action": "mapa_desplazado",
+    "details": {
+      "lat": -39.84920535453049,
+      "lng": -73.28516006469728
+    },
+    "occurredAt": "2026-11-04T15:07:19.678Z",
+    "recordedAt": "2026-11-04T15:07:19.725Z"
   }
 ]
