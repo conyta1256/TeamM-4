@@ -20,6 +20,25 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Almacenamiento del log en Neon
+
+La aplicación acumula los eventos en `localStorage` y envía un lote al servidor cada 20 acciones. Los lotes incompletos se envían al salir de la página o al volver a abrirla. Si Neon no confirma el guardado, la cola permanece en el navegador para reintentarla; cada lote tiene un ID único para que esos reintentos no dupliquen datos.
+
+Se puede Configurar en `DATABASE_URL` en `.env.local` con la cadena de conexión de Neon. La variable solo se usa en la API del servidor.
+
+Crea la tabla que usa la API en Neon:
+
+```sql
+CREATE TABLE public.log_batches (
+  session_id text NOT NULL,
+  batch_id uuid PRIMARY KEY,
+  events jsonb NOT NULL,
+  created_at timestamptz NOT NULL DEFAULT now()
+);
+```
+
+La ruta `app/api/log/route.js` acepta hasta 20 eventos por lote. Su endpoint `GET /api/log` devuelve los eventos almacenados en formato individual.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

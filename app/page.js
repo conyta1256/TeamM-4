@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import styles from "./page.module.css";
 
 const Map = dynamic(() => import("./componentes/Mapa"), {
@@ -9,6 +9,24 @@ const Map = dynamic(() => import("./componentes/Mapa"), {
 });
 
 const CLAVE_PROGRESO = "tour-valdivia-progreso";
+const CLAVE_LOG_PENDIENTE = "tour-valdivia-log-pendiente-v1";
+const TAMANO_LOTE_LOG = 20;
+
+function leerLotesPendientes() {
+  const contenido = window.localStorage.getItem(CLAVE_LOG_PENDIENTE);
+  if (!contenido) return [];
+
+  const lotes = JSON.parse(contenido);
+  if (!Array.isArray(lotes)) {
+    throw new Error("La cola local del log tiene un formato inválido.");
+  }
+
+  return lotes;
+}
+
+function guardarLotesPendientes(lotes) {
+  window.localStorage.setItem(CLAVE_LOG_PENDIENTE, JSON.stringify(lotes));
+}
 
 export default function Home() {
   const [puntos, setPuntos] = useState([]);
@@ -18,6 +36,62 @@ export default function Home() {
   const [puntuacionTotal, setPuntuacionTotal] = useState(0);
   const [preguntasRespondidas, setPreguntasRespondidas] = useState([]);
   const [progresoCargado, setProgresoCargado] = useState(false);
+  const enviandoLog = useRef(false);
+
+  const enviarLotesPendientes = useCallback(async ({ incluirParciales = false, maxLotes = Infinity } = {}) => {
+    if (incluirParciales) {
+      try {
+        const lotes = leerLotesPendientes().map((lote) => ({ ...lote, sealed: true }));
+        guardarLotesPendientes(lotes);
+      } catch (error) {
+        console.error("No se pudieron preparar los lotes pendientes del log:", error);
+        return;
+      }
+    }
+
+    if (enviandoLog.current) return;
+    enviandoLog.current = true;
+
+    try {
+      let lotes = leerLotesPendientes();
+      let enviados = 0;
+      while (enviados < maxLotes) {
+        lotes = leerLotesPendientes();
+        const lote = lotes.find((pendiente) => pendiente.sealed);
+        if (!lote) break;
+
+        const response = await fetch("/api/log", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            sessionId: lote.sessionId,
+            batchId: lote.batchId,
+            events: lote.events,
+          }),
+          keepalive: true,
+        });
+        const resultado = await response.json();
+        if (!response.ok || resultado.batchId !== lote.batchId) {
+          throw new Error(
+            resultado.error || `El servidor rechazó el lote del log (${response.status}).`,
+          );
+        }
+
+        const lotesActualizados = leerLotesPendientes();
+        guardarLotesPendientes(
+          lotesActualizados.filter((pendiente) => pendiente.batchId !== lote.batchId),
+        );
+        enviados += 1;
+      }
+    } catch (error) {
+      console.error(
+        "No se pudieron enviar los lotes pendientes del log; se conservaron localmente:",
+        error,
+      );
+    } finally {
+      enviandoLog.current = false;
+    }
+  }, []);
 
   const registrarEvento = useCallback((action, details = {}) => {
     let sessionId;
@@ -32,23 +106,48 @@ export default function Home() {
       return;
     }
 
-    fetch("/api/log", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        sessionId,
+    try {
+      const lotes = leerLotesPendientes();
+      let lote = [...lotes].reverse().find(
+        (pendiente) => !pendiente.sealed
+          && pendiente.sessionId === sessionId
+          && pendiente.events.length < TAMANO_LOTE_LOG,
+      );
+
+      if (!lote) {
+        lote = {
+          batchId: window.crypto.randomUUID(),
+          sessionId,
+          events: [],
+          sealed: false,
+        };
+        lotes.push(lote);
+      }
+
+      lote.events.push({
+        id: window.crypto.randomUUID(),
         action,
         details,
         occurredAt: new Date().toISOString(),
-      }),
-    })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`El servidor rechazó el evento del log (${response.status}).`);
-        }
-      })
-      .catch((error) => console.error("Error en log:", error));
-  }, []);
+      });
+      if (lote.events.length >= TAMANO_LOTE_LOG) lote.sealed = true;
+      guardarLotesPendientes(lotes);
+
+      if (lote.sealed) void enviarLotesPendientes();
+    } catch (error) {
+      console.error("No se pudo guardar el evento del log localmente:", error);
+    }
+  }, [enviarLotesPendientes]);
+
+  useEffect(() => {
+    void enviarLotesPendientes({ incluirParciales: true });
+
+    const alSalir = () => {
+      void enviarLotesPendientes({ incluirParciales: true, maxLotes: 1 });
+    };
+    window.addEventListener("pagehide", alSalir);
+    return () => window.removeEventListener("pagehide", alSalir);
+  }, [enviarLotesPendientes]);
 
   useEffect(() => {
     let cancelado = false;
@@ -175,9 +274,9 @@ export default function Home() {
       return;
     }
 
-    setPreguntasRespondidas([]);
-    setPuntuacionTotal(0);
-    handleIniciarJuego(true);
+  setPreguntasRespondidas([]);
+  setPuntuacionTotal(0);
+  handleIniciarJuego(true);
   };
 
 // Función para manejar cuando se responde correctamente
@@ -250,24 +349,24 @@ export default function Home() {
               historias que hacen de Valdivia un lugar único.
             </p>
             <div className={styles.actions}>
+            <button
+              className={styles.startButton}
+              onClick={() => handleIniciarJuego()}
+              disabled={puntos.length === 0 || !progresoCargado}
+            >
+              {hayPartidaGuardada ? "Continuar partida" : "Iniciar juego"}
+              <span aria-hidden="true">→</span>
+            </button>
+            {hayPartidaGuardada && (
               <button
-                className={styles.startButton}
-                onClick={() => handleIniciarJuego()}
-                disabled={puntos.length === 0 || !progresoCargado}
+              className={`${styles.startButton} ${styles.newGameButton}`}
+              onClick={handleNuevaPartida}
+              disabled={puntos.length === 0 || !progresoCargado}
               >
-                {hayPartidaGuardada ? "Continuar partida" : "Iniciar juego"}
-                <span aria-hidden="true">→</span>
+                Nueva partida
+                <span aria-hidden="true">↻</span>
               </button>
-              {hayPartidaGuardada && (
-                <button
-                  className={`${styles.startButton} ${styles.newGameButton}`}
-                  onClick={handleNuevaPartida}
-                  disabled={puntos.length === 0 || !progresoCargado}
-                >
-                  Nueva partida
-                  <span aria-hidden="true">↻</span>
-                </button>
-              )}
+            )}
             </div>
           </div>
         </section>

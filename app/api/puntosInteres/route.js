@@ -13,7 +13,7 @@ export async function GET() {
 
     const sheets = google.sheets({ version: "v4", auth });
     const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID;
-    
+
     // Cambia "Hoja1" por el nombre exacto de la pestaña abajo en tu spreadsheet
     const range = "Hoja1!A:J"; 
 

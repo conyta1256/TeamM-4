@@ -1,34 +1,87 @@
-import { randomUUID } from "crypto";
-import fs from "fs";
-import path from "path";
+import { neon } from "@neondatabase/serverless";
 import { NextResponse } from "next/server";
 
-const archivo = path.join(process.cwd(), "app", "api", "log", "data", "log.json");
+const TAMANO_MAXIMO_LOTE = 20;
+const UUID_VALIDO = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 
-function leerEventos() {
-  if (!fs.existsSync(archivo)) {
-    return [];
+function obtenerSql() {
+  const databaseUrl = process.env.DATABASE_URL;
+  if (!databaseUrl) {
+    throw new Error("Falta configurar DATABASE_URL para conectar con Neon.");
+  }
+  return neon(databaseUrl);
+}
+
+function esObjeto(valor) {
+  return valor !== null && typeof valor === "object" && !Array.isArray(valor);
+}
+
+function validarLote(entrada) {
+  if (
+    !esObjeto(entrada)
+    || typeof entrada.sessionId !== "string"
+    || !entrada.sessionId.trim()
+    || entrada.sessionId.length > 128
+    || typeof entrada.batchId !== "string"
+    || !UUID_VALIDO.test(entrada.batchId)
+    || !Array.isArray(entrada.events)
+    || entrada.events.length < 1
+    || entrada.events.length > TAMANO_MAXIMO_LOTE
+  ) {
+    return null;
   }
 
-  const contenido = fs.readFileSync(archivo, "utf8");
-  if (!contenido.trim()) {
-    return [];
+  const eventos = [];
+  for (const evento of entrada.events) {
+    if (
+      !esObjeto(evento)
+      || typeof evento.id !== "string"
+      || !UUID_VALIDO.test(evento.id)
+      || typeof evento.action !== "string"
+      || !evento.action.trim()
+      || evento.action.length > 100
+      || !esObjeto(evento.details)
+      || typeof evento.occurredAt !== "string"
+      || !Number.isFinite(Date.parse(evento.occurredAt))
+    ) {
+      return null;
+    }
+
+    eventos.push({
+      id: evento.id,
+      action: evento.action.trim(),
+      details: evento.details,
+      occurredAt: evento.occurredAt,
+    });
   }
 
-  const eventos = JSON.parse(contenido);
-  if (!Array.isArray(eventos)) {
-    throw new Error("El archivo de log debe contener una lista de eventos.");
-  }
-
-  return eventos;
+  return {
+    sessionId: entrada.sessionId.trim(),
+    batchId: entrada.batchId,
+    events: eventos,
+  };
 }
 
 export async function GET() {
   try {
-    return NextResponse.json(leerEventos());
+    const sql = obtenerSql();
+    const eventos = await sql`
+      SELECT
+        item.event ->> 'id' AS id,
+        lote.session_id AS "sessionId",
+        item.event ->> 'action' AS action,
+        COALESCE(item.event -> 'details', '{}'::jsonb) AS details,
+        item.event ->> 'occurredAt' AS "occurredAt",
+        lote.created_at AS "recordedAt"
+      FROM public.log_batches AS lote
+      CROSS JOIN LATERAL jsonb_array_elements(lote.events) AS item(event)
+      ORDER BY lote.created_at, item.event ->> 'occurredAt'
+    `;
+
+    return NextResponse.json(eventos);
   } catch (error) {
-    console.error("Error al leer el log:", error);
-    return NextResponse.json({ error: "No se pudo leer el log." }, { status: 500 });
+    console.error("Error al leer el log desde Neon:", error);
+    return NextResponse.json({ error: "No se pudo leer el log desde Neon." }, { status: 500 });
   }
 }
 
@@ -41,48 +94,39 @@ export async function POST(request) {
     return NextResponse.json({ error: "El cuerpo debe ser JSON válido." }, { status: 400 });
   }
 
-  if (
-    !entrada
-    || typeof entrada.action !== "string"
-    || !entrada.action.trim()
-    || entrada.action.length > 100
-    || typeof entrada.sessionId !== "string"
-    || !entrada.sessionId.trim()
-    || entrada.sessionId.length > 128
-  ) {
+  const lote = validarLote(entrada);
+  if (!lote) {
     return NextResponse.json(
-      { error: "Se requiere una acción y un identificador de sesión válido." },
-      { status: 400 },
-    );
-  }
-
-  if (
-    entrada.details != null
-    && (typeof entrada.details !== "object" || Array.isArray(entrada.details))
-  ) {
-    return NextResponse.json(
-      { error: "Los detalles del evento deben ser un objeto." },
+      { error: "El lote requiere un ID de sesión, un ID de lote y entre 1 y 20 eventos válidos." },
       { status: 400 },
     );
   }
 
   try {
-    const eventos = leerEventos();
-    const evento = {
-      id: randomUUID(),
-      sessionId: entrada.sessionId.trim(),
-      action: entrada.action.trim(),
-      details: entrada.details ?? {},
-      occurredAt: typeof entrada.occurredAt === "string" ? entrada.occurredAt : null,
-      recordedAt: new Date().toISOString(),
-    };
+    const sql = obtenerSql();
+    const guardados = await sql`
+      INSERT INTO public.log_batches (session_id, batch_id, events)
+      VALUES (${lote.sessionId}, ${lote.batchId}::uuid, ${JSON.stringify(lote.events)}::jsonb)
+      ON CONFLICT (batch_id) DO UPDATE
+        SET batch_id = EXCLUDED.batch_id
+        WHERE public.log_batches.session_id = EXCLUDED.session_id
+          AND public.log_batches.events = EXCLUDED.events
+      RETURNING batch_id AS "batchId"
+    `;
 
-    fs.mkdirSync(path.dirname(archivo), { recursive: true });
-    fs.writeFileSync(archivo, JSON.stringify([...eventos, evento], null, 2), "utf8");
+    if (guardados.length === 0) {
+      return NextResponse.json(
+        { error: "El ID de lote ya existe con datos diferentes." },
+        { status: 409 },
+      );
+    }
 
-    return NextResponse.json({ mensaje: "Evento guardado.", evento }, { status: 201 });
+    return NextResponse.json(
+      { mensaje: "Lote guardado.", batchId: lote.batchId },
+      { status: 201 },
+    );
   } catch (error) {
-    console.error("Error al guardar el evento del log:", error);
-    return NextResponse.json({ error: "No se pudo guardar el evento." }, { status: 500 });
+    console.error("Error al guardar el lote del log en Neon:", error);
+    return NextResponse.json({ error: "No se pudo guardar el lote en Neon." }, { status: 500 });
   }
 }
